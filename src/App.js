@@ -8,7 +8,7 @@ export const App = () =>{
     return(
         <>
             <StatusBar translucent backgroundColor="transparent"/>
-            <View style={{flex: 1}}>
+            <View style={styles.appView}>
                 <Navigation />
             </View>
         </>

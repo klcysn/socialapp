@@ -13,13 +13,12 @@ export const Navigation = () =>{
     const [main, setMain] = useState(false)
 
     useEffect(()=>{
-        setTimeout(()=>setMain(true),2000)
+        setTimeout(()=>setMain(true), 2000)
     },[])
     return(
         <NavigationContainer>
             <Stack.Navigator headerMode={"none"}>
-                {main && <Stack.Screen name = {"splash"} component= {Splash} />}
-                <Stack.Screen name = {"main"} component= {Main} />
+                <Stack.Screen name = {main ? "Main" : "Splash"} component= {main ? Main : Splash} />
             </Stack.Navigator>
         </NavigationContainer>
     )
