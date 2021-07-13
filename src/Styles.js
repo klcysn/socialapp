@@ -9,6 +9,9 @@ const styles = StyleSheet.create({
     mainView: {
         flex: 1,
     },
+    homeView:{
+        flex: 1
+    }
 
 })
 
