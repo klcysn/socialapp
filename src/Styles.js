@@ -6,9 +6,8 @@ const styles = StyleSheet.create({
     mainView: {
         flex: 1,
         backgroundColor: "#222222",
-        flexDirection: "row",
-        alignItems: "flex-start"
-        // flexWrap: "nowrap"
+        alignItems: "center",
+        justifyContent: "center"
     },
     topView: {
         height: getSBH(),
